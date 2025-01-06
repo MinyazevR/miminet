@@ -367,6 +367,7 @@ def vk_callback():
 
 
 def yandex_login(yandex_json=yandex_json):
+    print(yandex_json)
     yandex_session = OAuth2Session(
         yandex_json["web"]["client_id"],
         redirect_uri=yandex_json["web"]["redirect_uris"][0],
